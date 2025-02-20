@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LA BODEGA</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="articuloForm">
+      <h3> Artículo</h3>
+      <input type="text" id="articuloForm_inCosto" placeholder="Costo"></input>
+      <button id="articuloForm_btProcesar">Procesar</button> 
+    </section>
+    <section id="mainForm">
+      <h3>Ganancia de articulos</h3>
+      <p>Total ganancia: 
+        Bs<span id="mainForm_lblTotalGanancia">?</span>
+      </p>
+    </section>
+  </body>
+    <script type="module">
+      import Cl_principal from "./js/principal.js";
+      new Cl_principal()
+    </script>
+</html>
